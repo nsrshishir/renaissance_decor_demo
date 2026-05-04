@@ -3,14 +3,14 @@ Division 1: Home Division - RUNNING
 Division 2: Apparel Division – WORK IN PROGRESS
 
 
-System Users & Access Levels – DIVISION 1
+System Users & Access Levels – DIVISION 1 (Dcor)
 Total Users: Approximately 30 users
 Data Entry/Input Users: Approximately 20
 Approval & Management Users: Approximately 5
 Dashboard & Reporting Users: Approximately 10
 
 
-System Users & Access Levels – DIVISION 2
+System Users & Access Levels – DIVISION 2 (Apparels)
 Total Users: Approximately 40 users
 Data Entry/Input Users: Approximately 20
 Approval & Management Users: Approximately 5
@@ -18,13 +18,13 @@ Dashboard & Reporting Users: Approximately 20
 
 
 
-Locations & Warehouses – DIVISION 1
+Locations & Warehouses – DIVISION 1 (Dcor)
 Primary Warehouse: 1
 Sub-warehouses (issue products) – 5-10
 Internal Locations/Zones: Not required for division 1, but division 1 has larger process flow such as: Receive shipment -> quality -> stock in -> transfer/issue to store or warehouse -> client purchase -> full payment received -> quality check -> delivery. As such, we have designated spaces in our warehouse for quality, sold product, damage, repair, etc. These labels are necessary to show where the stock is and the condition of the stock. In total we have, Warehouse, Showroom, Issue to Subwarehouse, Repair, Damage, Customer Allocated (this means customer has paid but has not taken delivery yet, as such liability has not been transferred yet, so it is in our warehouse in sold-product area). This is approximately 10-15 ‘locations’.
 Physical Office/Retail Location: 1 Showroom, all offices in same showroom.
 
-Locations & Warehouses – DIVISION 2
+Locations & Warehouses – DIVISION 2 (Apparels)
 Primary Warehouse: 1
 Retail Locations: 2 outlets (1 in Uttara and 1 in Banani)
 Internal Locations/Zone: We need to be able to differentiate between floor display per store, stock room per store, and warehouse. The warehouse will be the dispatch site for all online orders. The floor display gets restocked daily from the stock room, and weekly from the warehouse. As such, we need internal zone to differentiate if it’s on the floor or in the stock room. When pulled from stock room for floor display, this should automatically become floor display.
