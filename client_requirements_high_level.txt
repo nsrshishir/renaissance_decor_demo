@@ -1,0 +1,50 @@
+ 
+Division 1: Home Division - RUNNING
+Division 2: Apparel Division – WORK IN PROGRESS
+
+
+System Users & Access Levels – DIVISION 1
+Total Users: Approximately 30 users
+Data Entry/Input Users: Approximately 20
+Approval & Management Users: Approximately 5
+Dashboard & Reporting Users: Approximately 10
+
+
+System Users & Access Levels – DIVISION 2
+Total Users: Approximately 40 users
+Data Entry/Input Users: Approximately 20
+Approval & Management Users: Approximately 5
+Dashboard & Reporting Users: Approximately 20
+
+
+
+Locations & Warehouses – DIVISION 1
+Primary Warehouse: 1
+Sub-warehouses (issue products) – 5-10
+Internal Locations/Zones: Not required for division 1, but division 1 has larger process flow such as: Receive shipment -> quality -> stock in -> transfer/issue to store or warehouse -> client purchase -> full payment received -> quality check -> delivery. As such, we have designated spaces in our warehouse for quality, sold product, damage, repair, etc. These labels are necessary to show where the stock is and the condition of the stock. In total we have, Warehouse, Showroom, Issue to Subwarehouse, Repair, Damage, Customer Allocated (this means customer has paid but has not taken delivery yet, as such liability has not been transferred yet, so it is in our warehouse in sold-product area). This is approximately 10-15 ‘locations’.
+Physical Office/Retail Location: 1 Showroom, all offices in same showroom.
+
+Locations & Warehouses – DIVISION 2
+Primary Warehouse: 1
+Retail Locations: 2 outlets (1 in Uttara and 1 in Banani)
+Internal Locations/Zone: We need to be able to differentiate between floor display per store, stock room per store, and warehouse. The warehouse will be the dispatch site for all online orders. The floor display gets restocked daily from the stock room, and weekly from the warehouse. As such, we need internal zone to differentiate if it’s on the floor or in the stock room. When pulled from stock room for floor display, this should automatically become floor display.
+
+
+Hi Team. Just a heads up. The presentation time will be maximum 30 minutes, and then an additional of 10-15 minutes question/answer/discussion. Please note, our Management is interested to know
+1. About your company
+2. ⁠Time-frame
+3. ⁠Approximate price quotation (can be a range)
+4. ⁠Companies who you have collaborated with
+5. ⁠A demo of an ERP you have created, not just Oddo demo
+6. ⁠Why Oddo is the right fit for us
+Feel free to add on to all of this, just be mindful of the time. Let us know which day works for you between Tuesday-Thursday. Thanks.
+
+
+
+Hi. You will receive a 2 hour slot with our MD, Head of Accounts, and Head of Operations to discuss the following:
+1. Company profile (your management, previous or existing clients, about yourself & the compnay, what your company represents)
+2. ⁠Demo of ERP for Division 1 - Home Furniture and demo of ERP with POS integration for Division 2 - Apparel. Process starting from stock in -> inventory -> invoice -> approval -> quality screen (optional) -> delivery -> return -> back to stock in
+3. ⁠Discussion regarding customization potential of your company and why your software is right for us (both ERP and POS, live time connectivitiy, bringing our workflows to life in the ERP, connecting POS to an existing e-commerce website)
+4. ⁠Time frame and approximate price quotation (can be a range)
+
+Feel free to add on to this as you deem fit. Prepare for many many questions as all departments will have representatives to understand your ability.

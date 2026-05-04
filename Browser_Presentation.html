@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Transformation Strategy - Renaissance Decor Ltd</title>
+    <style>
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f4f9; color: #333; overflow: hidden; }
+        #slider { width: 100%; height: 100%; display: flex; transition: transform 0.4s ease-in-out; }
+        .slide { min-width: 100%; height: 100%; box-sizing: border-box; padding: 40px 60px; display: flex; flex-direction: column; justify-content: center; background: #fff; position: relative; }
+        
+        .title-slide { background-color: #4a154b; color: white; align-items: center; text-align: center; }
+        .title-slide h1 { font-size: 3.5rem; text-transform: uppercase; margin-bottom: 10px; }
+        .title-slide h2 { font-size: 2.2rem; color: #f47b20; font-weight: 300; margin-top: 0; }
+        .title-slide img { height: 100px; margin-bottom: 20px; filter: brightness(0) invert(1); }
+        .title-meta { margin-top: 30px; font-size: 1.3rem; color: #ddd; text-align: center; }
+        
+        h2.slide-title { color: #4a154b; font-size: 3rem; border-bottom: 3px solid #f47b20; padding-bottom: 10px; margin-top: 0; margin-bottom: 25px;}
+        
+        .content { font-size: 1.4rem; line-height: 1.5; flex-grow: 1; }
+        
+        .grid-2 { display: flex; gap: 30px; height: 100%; }
+        .grid-2 > div { flex: 1; background: #f9f9fc; padding: 25px; border-radius: 8px; border: 1px solid #eee; }
+        .grid-2 h3 { color: #4a154b; margin-top: 0; font-size: 1.8rem; border-bottom: 2px solid #f47b20; padding-bottom: 8px; margin-bottom: 15px;}
+        
+        ul { padding-left: 25px; }
+        li { margin-bottom: 10px; font-size: 1.4rem;}
+        strong { color: #f47b20; }
+        
+        .focus-box { background-color: #f9f0f9; border-left: 6px solid #4a154b; padding: 30px; margin-top: 10px; }
+        .focus-box h3 { color: #4a154b; font-size: 2rem; margin-top: 0; margin-bottom: 15px;}
+        
+        .client-list { list-style: none; padding-left: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+        .client-list li { display: flex; align-items: flex-start; background: #f9f9fc; padding: 15px; border-radius: 8px; border: 1px solid #eee; margin-bottom: 0; font-size: 1.2rem; }
+        .client-logo { width: 60px; height: 60px; object-fit: contain; margin-right: 15px; background: white; padding: 5px; border-radius: 6px; border: 1px solid #ddd; }
+        
+        .video-placeholder, .img-placeholder { background: #f4f4f4; color: #555; height: 350px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 8px; font-size: 1.4rem; border: 2px dashed #ccc; margin-top: 15px; cursor: pointer; }
+        .video-icon { font-size: 4rem; margin-bottom: 10px; color: #f47b20; }
+        
+        .controls { position: absolute; bottom: 30px; right: 40px; display: flex; gap: 15px; z-index: 100;}
+        .controls button { background: #4a154b; color: white; border: none; padding: 10px 20px; font-size: 1.2rem; border-radius: 4px; cursor: pointer; transition: background 0.3s; box-shadow: 0 3px 4px rgba(0,0,0,0.2);}
+        .controls button:hover { background: #f47b20; }
+        .controls button:disabled { background: #ccc; cursor: not-allowed; box-shadow: none;}
+        
+        .slide-number { position: absolute; bottom: 30px; left: 40px; font-size: 1.2rem; color: #888; z-index: 100;}
+    </style>
+</head>
+<body>
+
+    <div class="slide-number" id="slideNum">1 / 12</div>
+    <div class="controls">
+        <button id="prevBtn" onclick="moveSlide(-1)" disabled>&#9664; Prev</button>
+        <button id="nextBtn" onclick="moveSlide(1)">Next &#9654;</button>
+    </div>
+
+    <div id="slider">
+        <!-- Slide 1 -->
+        <div class="slide title-slide">
+            <img src="Metamorphosis.png" alt="Metamorphosis Logo" onerror="this.style.display='none'">
+            <h1>Business Transformation Strategy</h1>
+            <h2>for Renaissance Decor Ltd.</h2>
+            <div class="title-meta">
+                <p>Date: May 5th, 2026</p>
+                <p>Presented by: Metamorphosis Ltd.</p>
+                <p>(1st Odoo Partner in Bangladesh)</p>
+                <img src="./mm_logo-transparent_1.png" alt="Odoo Partner Logo" style="height: 70px; margin-top: 15px; filter: none;" onerror="this.style.display='none'">
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="slide">
+            <h2 class="slide-title">Executive Opening</h2>
+            <div class="content">
+                <div class="focus-box">
+                    <h3>Working System Simulation</h3>
+                    <ul>
+                        <li>Not a generic software demo</li>
+                        <li>Live simulation of actual business workflows</li>
+                        <li>Conducted inside a unified ERP environment</li>
+                        <li>Proving operational visibility, control, and scalability</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="slide">
+            <h2 class="slide-title">About Metamorphosis Ltd.</h2>
+            <div class="content grid-2">
+                <div>
+                    <h3>Identity & Philosophy</h3>
+                    <ul>
+                        <li><strong>Founded:</strong> Jan 2017 (1st Odoo Partner in BD)</li>
+                        <li><strong>Approach:</strong> "Business Acumen First"</li>
+                        <li><strong>Service:</strong> Architecting transformations from ground up</li>
+                        <li><strong>Team:</strong> 30+ Experts (5 Certified Odoo Consultants)</li>
+                        <li><strong>Reach:</strong> 80+ global projects across 4 continents</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Leadership Powerhouse</h3>
+                    <ul style="list-style: none; padding-left: 0;">
+                        <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+                            <img src="mm_heads/rokon.jpeg" alt="Rokon" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                            <div><strong>Rukunuzzaman (CEO):</strong> BUET. Ex-Banglalink. Certified Consultant.</div>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+                            <img src="mm_heads/sadiq.jpeg" alt="Sadiq" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                            <div><strong>Sadiq M. Alam (COO):</strong> BUET, NUS. 20+ years IT/Solutions Architect.</div>
+                        </li>
+                        <li style="margin-bottom: 10px; display: flex; align-items: center; gap: 10px;">
+                            <img src="mm_heads/ishtiaque.jpeg" alt="Istiaque" style="width: 50px; height: 50px; border-radius: 50%; object-fit: cover;">
+                            <div><strong>Istiaque (Partner):</strong> IUT, MBA. Master of Business Process Mapping.</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="slide">
+            <h2 class="slide-title">Mountain-Moving Experience</h2>
+            <div class="content">
+                <ul class="client-list">
+                    <li><img src="Client_logo/Bangladesh_Armed_Services_Board_(BASB).png" alt="BASB Logo" class="client-logo" onerror="this.style.display='none'"> <div><strong>BASB:</strong> 64-district real-time POS & inventory sync for medicine/prescription dispatch.</div></li>
+                    <li><img src="Client_logo/shanta_lifestyle.jpg" alt="Shanta Lifestyle Logo" class="client-logo" onerror="this.style.display='none'"> <div><strong>Shanta Lifestyle:</strong> High-end retail, inventory, and supply chain for premium décor brand.</div></li>
+                    <li><img src="Client_logo/premier1888-logo-1.png" alt="Premier 1888 Logo" class="client-logo" style="filter: invert(1); background: transparent; border: none;" onerror="this.style.display='none'"> <div><strong>Premier 1888:</strong> 100% Export. Strict QC & Inventory meeting global compliance (Walmart/IKEA).</div></li>
+                    <li><img src="Client_logo/agiliminds_Corp.jpeg" alt="Agileminds Logo" class="client-logo" onerror="this.style.display='none'"> <div><strong>Agileminds:</strong> Multi-company isolated operations with group-level visibility & real-time sync.</div></li>
+                    <li><img src="Client_logo/mnu_logo.webp" alt="M&U Cycles Logo" class="client-logo" onerror="this.style.display='none'"> <div><strong>M&U Cycles:</strong> 100% Export. Deep manufacturing, purchase, and accounting workflows.</div></li>
+                    <li><img src="Client_logo/idiya_logo.jpg" alt="IDIYA Logo" class="client-logo" onerror="this.style.display='none'"> <div><strong>IDIYA:</strong> Automated paperless eCommerce & smart routing for IKEA parallel imports.</div></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 5 (Process Flow - Apparel) -->
+        <div class="slide">
+            <h2 class="slide-title">Apparel Workflow</h2>
+            <div class="content">
+                <p>Optimized process for speed, retail accuracy, and e-commerce readiness.</p>
+                <div class="img-placeholder" style="border-style: solid;">
+                    <img src="process_flow_chart/20260503_renaissa_SLS_PROF_apparel_v02.png" alt="Apparel Flow" style="max-width: 95%; max-height: 95%; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 6 (Simulation - Apparel) -->
+        <div class="slide">
+            <h2 class="slide-title">Simulation: Apparel Division</h2>
+            <div class="content">
+                <ul>
+                    <li>High-speed retail operations (POS)</li>
+                    <li>Real-time inventory management</li>
+                </ul>
+                <div class="video-placeholder" onclick="alert('Play Local Video')">
+                    <div class="video-icon">&#9655;</div>
+                    <div>Play Apparel Division Simulation</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 7 (Process Flow - Home Decor) -->
+        <div class="slide">
+            <h2 class="slide-title">Home Décor Workflow</h2>
+            <div class="content">
+                <p>Optimized process for complex imports, QC, and multi-location management.</p>
+                <div class="img-placeholder" style="border-style: solid;">
+                    <img src="process_flow_chart/20260503_renaissa_SLS_PROF_homeDecor_v02.png" alt="Home Decor Flow" style="max-width: 95%; max-height: 95%; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 8 (Simulation - Home Decor) -->
+        <div class="slide">
+            <h2 class="slide-title">Simulation: Home Décor</h2>
+            <div class="content">
+                <ul>
+                    <li>Landed cost & purchase accuracy</li>
+                    <li>QC & payment-controlled delivery</li>
+                </ul>
+                <div class="video-placeholder" onclick="alert('Play Local Video')">
+                    <div class="video-icon">&#9655;</div>
+                    <div>Play Home Décor Simulation</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 9 (Strategic Value) -->
+        <div class="slide">
+            <h2 class="slide-title">Strategic Value of Odoo ERP for RDL</h2>
+            <div class="content grid-2">
+                <div>
+                    <h3>1. Unified Operational Excellence</h3>
+                    <ul style="font-size: 1.2rem;">
+                        <li><strong>End-to-End Visibility:</strong> Real-time, product-movement-wise tracking.</li>
+                        <li><strong>Financial Clarity:</strong> Fully consolidated accounting reports.</li>
+                        <li><strong>Automated Efficiency:</strong> Single-click updates eliminate redundant work.</li>
+                        <li><strong>Seamless Adoption:</strong> Standard SOP perfectly aligned with your business.</li>
+                    </ul>
+                    <h3>2. Future-Proof Scalability (10-Yr)</h3>
+                    <ul style="font-size: 1.2rem;">
+                        <li><strong>Multi-Division:</strong> Manage diverse portfolios under one unified system.</li>
+                        <li><strong>Limitless Growth:</strong> Scalable for all future ventures.</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>3. World-Class Technology</h3>
+                    <ul style="font-size: 1.2rem;">
+                        <li><strong>Global Standard:</strong> #1 Open Source ERP. Avoids SAP/Oracle complexity.</li>
+                        <li><strong>AI-Driven:</strong> Next-gen AI to elevate business strategies.</li>
+                        <li><strong>Proactive Security:</strong> Continuous monitoring from Odoo HQ.</li>
+                    </ul>
+                    <h3>4. The Implementation Advantage</h3>
+                    <ul style="font-size: 1.2rem;">
+                        <li><strong>Expertise:</strong> Deployed by Bangladesh’s 1st Odoo Partner, dedicated to specialized solutions.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 10 -->
+        <div class="slide">
+            <h2 class="slide-title">Strategy & Tight Timeline</h2>
+            <div class="content grid-2">
+                <div>
+                    <h3>Phase 1: Apparel (Immediate)</h3>
+                    <p style="font-weight: bold; color: #4a154b;">Target: 2-3 Months Go-Live</p>
+                    <ul>
+                        <li>Multi-location POS (Uttara & Banani)</li>
+                        <li>Inventory separation & synchronization</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Phase 2: Home Décor</h3>
+                    <p style="font-weight: bold; color: #4a154b;">Target: Sequential Rollout</p>
+                    <ul>
+                        <li>Landed Cost & QC workflows</li>
+                        <li>Complex reservation & payment blocks</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 11 -->
+        <div class="slide">
+            <h2 class="slide-title">Total Cost of Ownership (TCO)</h2>
+            <div class="content">
+                <div style="background: #f9f9fc; padding: 15px; border-radius: 8px; border: 1px solid #eee; margin-bottom: 10px;">
+                    <h3 style="color: #4a154b; margin: 0 0 5px 0; font-size: 1.6rem;">1. Odoo Licensing Optimization</h3>
+                    <p style="margin: 0;">Audit/optimize roles (Dashboard vs. Data Entry) to minimize recurring license costs.</p>
+                </div>
+                
+                <div style="background: #f9f9fc; padding: 15px; border-radius: 8px; border: 1px solid #eee; margin-bottom: 10px;">
+                    <h3 style="color: #4a154b; margin: 0 0 5px 0; font-size: 1.6rem;">2. Lean Cloud Infrastructure</h3>
+                    <p style="margin: 0;">High-performance overseas VPS with lean architecture (Gunicorn/Nginx) for zero bloat.</p>
+                </div>
+
+                <div style="background: #f9f9fc; padding: 15px; border-radius: 8px; border: 1px solid #eee;">
+                    <h3 style="color: #4a154b; margin: 0 0 5px 0; font-size: 1.6rem;">3. Local Expert Investment</h3>
+                    <p style="margin: 0;">Seasoned BD-based expertise providing international standards without exorbitant rates.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 12 -->
+        <div class="slide title-slide" style="background-color: #f47b20;">
+            <h1 style="font-size: 6rem;">Q & A</h1>
+        </div>
+
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const slider = document.getElementById('slider');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const slideNum = document.getElementById('slideNum');
+
+        function updateSlider() {
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === slides.length - 1;
+            slideNum.innerText = `${currentSlide + 1} / ${slides.length}`;
+        }
+
+        function moveSlide(direction) {
+            currentSlide += direction;
+            if (currentSlide < 0) currentSlide = 0;
+            if (currentSlide >= slides.length) currentSlide = slides.length - 1;
+            updateSlider();
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowRight' || e.key === 'Space') {
+                if (currentSlide < slides.length - 1) moveSlide(1);
+            } else if (e.key === 'ArrowLeft') {
+                if (currentSlide > 0) moveSlide(-1);
+            }
+        });
+    </script>
+</body>
+</html>
